@@ -1,4 +1,4 @@
-# sunbiz_parse
+# Sunbiz Parse Project for Campbell Property Management
 Parses the sunbiz page to look for annual reports for Campbell Property Associations based on Associations' Tax IDs
 
 ## Steps To Run File
@@ -13,8 +13,8 @@ Parses the sunbiz page to look for annual reports for Campbell Property Associat
 9. The file will then finish and you can open up the excel sheet to see the results.
 
 ## For Future Uses
-Change the scraper API key in the code after paying for the ScraperWeb service.
-Make sure the Tax Ids are in column E in the Association excel sheet.
+Change the scraper API key in the code after paying for the ScraperWeb service.<br>
+Make sure the Tax Ids are in column E in the Association excel sheet.<br>
 Update the code to 2027 or a different year if needed. 
 
 ## To update code
