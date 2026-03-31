@@ -52,7 +52,7 @@ excel_path = input("File path: ").strip().strip('"')  # strip quotes in case the
 
 df = pd.read_excel(excel_path)
 
-for index, row in df.iloc.iterrows():
+for index, row in df.iterrows():
     tax_id = str(row.iloc[4]).strip().replace("-", "")
     print(f"\nRow {index} | Tax ID: {tax_id}")
 
