@@ -2,11 +2,16 @@ import pandas as pd
 import requests
 from urllib.parse import urlencode
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+import os
 import time
 import random
 
 # ── Sign up free at https://www.scraperapi.com → get your API key ────────────
-SCRAPER_API_KEY = "eb4f188ee815ff43b6fd721a4fa7482c"
+api_key = os.getenv("SCRAPER_API_KEY")
+
+if not api_key:
+    raise ValueError("SCRAPER_API_KEY not found")
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
